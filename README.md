@@ -28,7 +28,7 @@
 To run the tool, execute the following command:
 
 ```bash
-python3 gisaid_gap_correct.py -f "path/to/your.fasta" -p <position> -ct <change_type> -cn <change_nucleotides> -mp "path/to/output"
+python3 gisaid_gap.py -f "path/to/your.fasta" -p <position> -ct <change_type> -cn <change_nucleotides> -mp "path/to/output"
 ```
 
 ### Arguments:
@@ -42,7 +42,7 @@ python3 gisaid_gap_correct.py -f "path/to/your.fasta" -p <position> -ct <change_
 ### Example:
 
 ```bash
-python3 gisaid_gap_correct.py -f "/path/to/sequence.fasta" -p 345 -ct "insertion" -cn "AGTC" -mp "/path/to/output_folder"
+python3 gisaid_gap.py -f "/path/to/sequence.fasta" -p 345 -ct "insertion" -cn "AGTC" -mp "/path/to/output_folder"
 ```
 
 This command will insert the nucleotides "AGTC" at position 345 in the specified FASTA file and generate both an edited FASTA file and an HTML report in the output folder.
